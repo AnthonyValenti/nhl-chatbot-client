@@ -115,3 +115,11 @@ h1{
 }
 
 
+@media screen and (max-width: 800px) {
+  .bottomBar {
+      width: 90%;
+  }
+  .chat{
+    width: 90%;
+  }
+}
