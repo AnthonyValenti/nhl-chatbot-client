@@ -1,38 +1,117 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  height: 100vh;
+}
+h1{
+  color: #ececf1;
+}
+
+.chat{
+  width: 50%;
+  height: 80%;
+  margin-bottom: 2%;
+  overflow: scroll;
+}
+
+.bottomBar{
+  border-style: solid;
+  border-color: #8e8ea0;
+  border-width: 1px;
+  border-radius: 15px;
+  max-height: 200px;
+  padding: 5px;
+  height: 52px;
+  width: 50%;
+  margin-bottom: 2%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.textInput{
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  height: 100%;
+  font-size: 16px;
+  color: #ececf1;
+  font-weight: 700;
+  overflow-y: scroll;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textInput:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: transparent; /* Makes the border transparent on focus */
 }
+.arrow{
+  height: 60%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #8e8ea0;
+  opacity: 0.5;
+  margin-left: 5%;
+  align-items: center;
+}
+.arrow img{
+  height: 100%;
+}
+.arrow:hover{
+  opacity: 0.8;
+}
+.clear{
+  height: 60%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #8e8ea0;
+  opacity: 0.5;
+  margin-left: 2%;
+  align-items: center;
+}
+.clear img{
+  height: 100%;
+}
+.clear:hover{
+  opacity: 0.8;
+}
+
+
+.msg{
+  text-align: left;
+  color: #ececf1;
+  font-weight: 500;
+  font-size: 16px;
+  width: 98%;
+  margin-left: 2%;
+}
+.role{
+  font-weight: 900;
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ececf1; /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  opacity: 0.2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+
+
